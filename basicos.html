@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Componentes basicos</title>
+
+    <link
+    rel="stylesheet"
+    href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!-- https://getbootstrap.com/docs/5.3/getting-started/introduction/ -->
+    <h1>Botones</h1>
+    <button class="btn btn-success">Hola</button>
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-secondary">Secondary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-light">Light</button>
+    <button type="button" class="btn btn-dark">Dark</button>
+    <button type="button" class="btn btn-link">Link</button>
+    <a href="#" class="btn btn-success">Buena crack</a>
+
+    <br>
+    <br>
+    <h3>Outlines</h3>
+
+    <button type="button" class="btn btn-outline-primary">Primary</button>
+    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+    <button type="button" class="btn btn-outline-success">Success</button>
+    <button type="button" class="btn btn-outline-danger">Danger</button>
+    <button type="button" class="btn btn-outline-warning">Warning</button>
+    <button type="button" class="btn btn-outline-info">Info</butto>
+    <button type="button" class="btn btn-outline-light">Light</button>
+    <button type="button" class="btn btn-outline-dark">Dark</button>
+
+    <br>
+    <br>
+    <h3>Tamaños</h3>
+    <button type="button" class="btn btn-outline-primary btn-sm">Primary</button> <!-- Small -->
+    <button type="button" class="btn btn-outline-secondary">Secondary</button> <!-- normal -->
+    <button type="button" class="btn btn-outline-success btn-lg">Success</button> <!-- Largo -->
+    <button type="button" class="btn btn-primary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Custom button</button>  
+
+    <br>
+    <br>
+    <h3>Botones agrupados</h3>
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary">Primary</button>
+            <button type="button" class="btn btn-secondary">Secondary</button>
+            <button type="button" class="btn btn-success">Success</button>
+        </div>
+        <br>
+        <!-- Botones que con un click se quedan como un check -->
+        <div class="btn-group">
+            <input type="checkbox" class="btn-check" id="btncheck1">
+            <label type="button" class="btn btn-outline-primary" for="btncheck1">Primary</label>
+            <input type="checkbox" class="btn-check" id="btncheck2">
+            <label type="button" class="btn btn-outline-danger" for="btncheck2">Primary</label>
+        </div>
+
+    <br>
+    <br>
+    <h3>Disables</h3>
+    <button type="button" class="btn btn-primary" disabled>Primary button</button>
+    <button type="button" class="btn btn-secondary" disabled>Button</button>
+
+    <br>
+    <br>
+    <h3>Alerta</h3>
+    <div class="alert alert-primary" role="alert">
+        A simple primary alert—check it out!
+    </div>
+    <div class="alert alert-secondary" role="alert">
+        A simple secondary alert—check it out!
+    </div>
+    <div class="alert alert-success" role="alert">
+        A simple success alert—check it out!
+    </div>
+    <div class="alert alert-danger" role="alert">
+        A simple danger alert—check it out!
+    </div>
+    <div class="alert alert-warning" role="alert">
+        A simple warning alert—check it out!
+    </div>
+    <div class="alert alert-info" role="alert">
+        A simple info alert—check it out!
+    </div>
+    <div class="alert alert-light" role="alert">
+        A simple light alert—check it out!
+    </div>
+    <div class="alert alert-dark" role="alert">
+        A simple dark alert—check it out!
+    </div>
+    <div class="alert alert-danger" role="alert">
+        <h4>Contenido</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, ipsum. Incidunt nam in, suscipit labore consectetur expedita nostrum accusantium quae non, nesciunt, odit sapiente voluptatum commodi modi laborum soluta esse.</p>
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button><!-- Mezcla de componentes de js y bootstrap para hacer un boton con la funcion de cerrar -->
+    </div>
+
+    <br>
+    <br>
+    <h3>Badge</h3>
+    <button type="button" class="btn btn-primary">
+        Notifications <span class="badge bg-secondary rounded-pill">4</span>
+    </button>
+
+    <br>
+    <br>
+    <h3>Grupo de listas</h3>
+    <ul class="list-group">
+        <li class="list-group-item active">Item 1</li>
+        <li class="list-group-item">Item 2</li>
+        <li class="list-group-item disabled">Item 3</li>
+        <li class="list-group-item">Item 4</li>
+    </ul>
+</body>
+</html>
