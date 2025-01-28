@@ -11,6 +11,20 @@
     <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </head>
 <body>
-    
+    <div class="alert alert-danger" id="myAlert">
+        <h4 class="alert-heading">Titulo</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, cum inventore voluptatibus labore obcaecati ex explicabo odio. Consectetur voluptatem nisi reiciendis recusandae mollitia doloremque molestias eum. Quos repellat impedit suscipit.</p>
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+
+    <script>
+        const myAlertI = bootstrap.Alert.getOrCreateInstance('#myAlert');// Cuando llamamos al elemento con bootstrap hay que ponerle la #
+        // myAlertI.close()
+
+        const myAlert = document.getElementById("myAlert")
+        myAlert.addEventListener('close.bs.alert', event => {
+            console.log('cerrado')
+        })
+    </script>
 </body>
 </html>

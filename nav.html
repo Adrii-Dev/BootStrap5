@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+    <!-- Se necesita cargar primero la dependencia de @popper antes que la de bootstrap -->
+    <script src="../node_modules/@popperjs/core/dist/umd/popper-base.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+<body style="background: #09F;">
+    <!-- Creacion tipica de un navbar o barra de menu xd-->
+    <div class="navbar navbar-expand-lg bg-body-tertiary"><!-- Elemento raiz del menu, navbar-expand-lg, navbar-expand-sm, navbar-expand-md segun la resolucion que quieres que salga el botton -->
+                                        <!-- bg-body-tertiary para el color del nav -->
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">NavBar</a>
+
+            <!-- Para cuando disminuyes la resolucion, para que te salga un icono -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNav">
+                <!-- El icono que quieras, en este caso uno predeterminado por bootstrap-->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Los enlaces -->
+            <div class="collapse navbar-collapse" id="collapseNav">
+                <ul class="navbar-nav me-auto"><!-- me-auto para darle margen y que el boton de busqueda se pegue a la derecha-->
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Links</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link disabled">Prohibido</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Dropdown</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="dropdown-item">Opcion 1</a></li>
+                            <li><a href="#" class="dropdown-item">Opcion 2</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- Formulario, en este caso para uno de busqueda-->
+                <form class="d-flex"><!-- Lo ponemos para que sea flex y se alineen -->
+                    <input type="text" class="form-control" type="search" placeholder="Buscar..">
+                    <button class="btn btn-outline-success">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
